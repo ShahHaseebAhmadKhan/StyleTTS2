@@ -591,7 +591,7 @@ def load_F0_models(path):
     
     return F0_model
 
-def load_ASR_models(ASR_MODEL_PATH, ASR_MODEL_CONFIG):
+def load_ASR_models(ASR_MODEL_PATH, ASR_MODEL_CONFIG, weights_only=False):
     # load ASR model
     def _load_config(path):
         with open(path) as f:
